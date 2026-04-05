@@ -1,3 +1,5 @@
+# Import parts 1 and 2
+from page_replacement_algorithms import fifo_page_replacement, lru_page_replacement, clock_page_replacement
 
 def run_simulation(input_data):
     """
