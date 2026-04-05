@@ -66,10 +66,10 @@ def main():
 
     # Load and validate the input JSON data
     data = load_and_validate(input_path)
-
+    
     # Run the simulation using the integrated routing logic
     result = run_simulation(data)
-
+    
     # Save the formatted simulation results directly to the specified output file
     with open(output_path, "w") as outfile:
         json.dump(result, outfile, indent=2)
