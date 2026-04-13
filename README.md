@@ -70,3 +70,28 @@ Use of AI
 
 - AI tools were used to help understand the algorithms and organize the explanation  
 - The final code and explanation were reviewed and understood before submission  
+
+Input, Output, and Program Entry Point
+
+- main.py is the entry point of the program
+- it is responsible for reading the input JSON file, validating its contents, and producing the final JSON output
+- the program is run using python main.py input.json > output.json
+
+When the program starts, it calls load_and_validate() which checks:
+
+- the input file exists and contains valid JSON
+- all required fields are present: algorithm, frames, and references
+- the algorithm is one of the three supported options: FIFO, LRU, or Clock
+- if any check fails, the program exits with a clear error message
+
+If the input is valid:
+
+- the data is passed to run_simulation() from integration.py
+- the result is printed as formatted JSON using json.dumps()
+- the > redirect captures this output into the output file
+
+Sample files included:
+
+- input_fifo.json, input_lru.json, input_clock.json
+- output_fifo.json, output_lru.json, output_clock.json
+- all sample files use the reference string from the assignment specification
