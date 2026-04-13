@@ -65,12 +65,6 @@ A function called run_simulation safely extracts parameters from the input dicti
 - it uses conditional routing to direct the execution flow to the appropriate function (FIFO, LRU, or Clock)
 - it restructures the returned metrics into the strict JSON output format required by the assignment
 
-
-Use of AI
-
-- AI tools were used to help understand the algorithms and organize the explanation  
-- The final code and explanation were reviewed and understood before submission  
-
 Input, Output, and Program Entry Point
 
 - main.py is the entry point of the program
@@ -95,3 +89,10 @@ Sample files included:
 - input_fifo.json, input_lru.json, input_clock.json
 - output_fifo.json, output_lru.json, output_clock.json
 - all sample files use the reference string from the assignment specification
+
+Use of AI
+
+- AI tools were used to help understand the algorithms and organize the explanation  
+- The final code and explanation were reviewed and understood before submission  
+
+
