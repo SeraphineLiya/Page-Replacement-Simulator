@@ -26,6 +26,34 @@ LRU (Least Recently Used)
 - If two pages have the same priority, the smaller page number is chosen  
 - LRU keeps recently used pages in memory, so it usually performs better than FIFO  
 
+The Clock Algorithm keeps track of:
+ - frames: the pages currently in memory
+ - reference_bits: a bit for each page that shows if it was used recently
+ - pointer: a circular pointer that moves through the frames like a clock hand
+
+ When a page is accessed:
+ - if the page is already in memory, it is a HIT
+ - its reference bit is set to 1
+
+ - if the page is not in memory, it is a FAULT
+ - if there is space in memory, the page is added
+ - if memory is full, the algorithm checks pages using the pointer
+
+ When memory is full:
+ - if a page has reference bit 1, it gets a second chance
+ - its bit is changed to 0, and the pointer moves forward
+ - this continues until a page with reference bit 0 is found
+ - that page is replaced with the new page
+
+ At the end, the function returns:
+ - total page faults
+ - total page hits
+ - final frame contents
+ - and, if trace=True, the step-by-step process
+
+
+
+
 Use of AI
 
 - AI tools were used to help understand the algorithms and organize the explanation  
