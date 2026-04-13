@@ -51,7 +51,19 @@ The Clock Algorithm keeps track of:
  - final frame contents
  - and, if trace=True, the step-by-step process
 
+Integration and Routing
+- this section acts as the central routing mechanism
+- it connects the parsed JSON input to the specific page replacement algorithms
+- a highly modular approach keeps the routing logic completely separate from the core algorithms
 
+A function called run_simulation safely extracts parameters from the input dictionary:
+- algorithm: the chosen replacement method
+- frames: the number of memory frames
+- references: the list of page numbers
+- trace: optional parameter for step-by-step details
+
+- it uses conditional routing to direct the execution flow to the appropriate function (FIFO, LRU, or Clock)
+- it restructures the returned metrics into the strict JSON output format required by the assignment
 
 
 Use of AI
