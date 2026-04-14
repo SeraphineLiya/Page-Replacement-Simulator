@@ -107,7 +107,6 @@ Bonus tests
 
 - edge cases (single frame, plenty of space,thrashing) : input_edge1.json, input_edge2.json, input_edge3.json 
 
-Use of AI
 
 Use of AI
 
