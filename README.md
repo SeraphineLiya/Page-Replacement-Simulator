@@ -1,4 +1,5 @@
 GROUP MEMBERS:
+
 Name: Anha Ashraf Liya 
 ID: 110154128
 
@@ -108,7 +109,10 @@ Bonus tests
 
 Use of AI
 
-- AI tools were used to help understand the algorithms and organize the explanation  
-- The final code and explanation were reviewed and understood before submission  
+Use of AI
+
+- AI tools were used during this project to assist with understanding the FIFO and LRU page replacement algorithms, as well as helping with code structure, debugging, and writing explanations.
+
+- The algorithms, logic, and final implementation were reviewed carefully, and all parts of the code and documentation were understood before submission.
 
 
