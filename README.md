@@ -102,6 +102,9 @@ Sample files included:
 - input_fifo.json, input_lru.json, input_clock.json
 - output_fifo.json, output_lru.json, output_clock.json
 - all sample files use the reference string from the assignment specification
+Bonus tests
+
+- edge cases (single frame, plenty of space,thrashing) : input_edge1.json, input_edge2.json, input_edge3.json 
 
 Use of AI
 

@@ -1,0 +1,11 @@
+{
+  "algorithm": "Clock",
+  "frames": 3,
+  "faults": 10,
+  "hits": 0,
+  "final_frames": [
+    2,
+    4,
+    1
+  ]
+}

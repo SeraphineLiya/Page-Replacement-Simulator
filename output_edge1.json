@@ -1,0 +1,9 @@
+{
+  "algorithm": "FIFO",
+  "frames": 1,
+  "faults": 8,
+  "hits": 0,
+  "final_frames": [
+    3
+  ]
+}
