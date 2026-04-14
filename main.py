@@ -64,18 +64,23 @@ def load_and_validate(path: str) -> dict:
 
 
 def main():
-    # Check that exactly one argument (the input file path) was provided
-    if len(sys.argv) != 2:
-        sys.exit("Usage: python3 main.py input.json > output.json")
+    # Check that exactly 3 arguments were provided: main.py, input.json, output.json
+    if len(sys.argv) != 3:
+        sys.exit("Usage: python3 main.py input.json output.json")
 
-    #read and validate the JSON file
-    data   = load_and_validate(sys.argv[1])
+    input_path = sys.argv[1]
+    output_path = sys.argv[2]
+
+    # read and validate the JSON file
+    data = load_and_validate(input_path)
+    
     # Pass the validated input to the routing function in integration.py
     result = run_simulation(data)
-    # The > operator in the terminal captures this into the output file
-    print(json.dumps(result, indent=2))
-
+    
+    # Save the result directly to the output file
+    with open(output_path, "w") as outfile:
+        json.dump(result, outfile, indent=2)
 
 if __name__ == "__main__":
-    #only run main() if this file is executed directly
+    # Only run main() if this file is executed directly
     main()

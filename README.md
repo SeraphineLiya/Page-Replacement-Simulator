@@ -1,3 +1,16 @@
+GROUP MEMBERS:
+Name: Anha Ashraf Liya 
+ID: 110154128
+
+Name: Pedro Franca Alvares Montandon
+ID: 110155211
+
+Name: Peter Ciastek
+ID: 110165055
+
+Name: Victor Tekigerwa 
+ID: 110155660
+
 FIFO and LRU Page Replacement
 
 FIFO (First In First Out)
@@ -69,7 +82,7 @@ Input, Output, and Program Entry Point
 
 - main.py is the entry point of the program
 - it is responsible for reading the input JSON file, validating its contents, and producing the final JSON output
-- the program is run using python main.py input.json > output.json
+- the program is run using python3 main.py input.json output.json
 
 When the program starts, it calls load_and_validate() which checks:
 
@@ -82,7 +95,7 @@ If the input is valid:
 
 - the data is passed to run_simulation() from integration.py
 - the result is printed as formatted JSON using json.dumps()
-- the > redirect captures this output into the output file
+- the program saves this output directly into the specified output file
 
 Sample files included:
 
